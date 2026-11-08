@@ -6,6 +6,8 @@ Identifique o checkout e o pedido antes da busca. Se o usuário indicar um tema 
 
 ## Seguir o comportamento
 
+Se o funcionamento do módulo ainda não estiver explicado pelas fontes lidas, use [descoberta do módulo](descoberta-do-modulo.md) antes de decidir o conteúdo das páginas. Esta receita seleciona o impacto documental; a descoberta reconstrói o comportamento que será explicado.
+
 Mapeie promessa, owner, writers/readers e consumidores afetados. Localize quick, guia, jornadas, referências e documentação técnica que expliquem esse comportamento. Confira arquivos, índices, slugs e links. Nomes e matches selecionam candidatos, mas não provam cobertura; siga dependências que mudem a resposta e pare quando o alcance estiver explicado.
 
 ## Registrar a conclusão

@@ -1,6 +1,6 @@
 ---
 name: dietflow-docs
-description: "Cria, atualiza, consolida ou recenseia documentação técnica do DietFlow para desenvolvedores. Use para arquitetura, código, dados, contratos, fluxos internos e READMEs; para ensinar uso ao nutricionista use user-docs, e operação administrativa use admin-docs."
+description: "Cria, atualiza, consolida ou recenseia documentação técnica do DietFlow para desenvolvedores. Use para descobrir como um módulo funciona pelo código e documentar arquitetura, dados, contratos, fluxos internos e READMEs; para ensinar uso ao nutricionista use user-docs, e operação administrativa use admin-docs."
 ---
 
 # Documentação técnica do DietFlow
@@ -14,6 +14,8 @@ Docs canônicas ficam no owner documental do projeto; README explica seu pacote;
 ## Como trabalhar
 
 Identifique o checkout consumidor, leia suas instruções e localize os owners pelo [mapa de fontes](../../assets/references/fontes-dietflow.md). Receitas do pacote ensinam a forma; código e contratos vivos determinam os fatos. Não é necessário ler documentos exemplares externos para aprender a escrever.
+
+Quando precisar entender um módulo para documentá-lo, siga [descoberta do módulo](../../assets/playbooks/descoberta-do-modulo.md): parta da entrada real, reconstrua uso, regras, estados, dados e integrações, e transforme os achados em documentação para o leitor desta skill. Isso também vale sem docs anteriores ou delta Git. Reaproveite descoberta compatível com o recorte; não dependa de um agente externo nem peça novamente o público.
 
 Do pedido e contexto, resolva criar, atualizar, consolidar ou recensear. Examine o delta integral pertinente, preserve WIP alheio e siga owners/consumidores; use [censo e impacto](../../assets/playbooks/censo-e-impacto.md) quando houver mudança ou recenso. Um match não prova cobertura, e contagem não demonstra frescor. Não crie um registro novo se o existente basta.
 

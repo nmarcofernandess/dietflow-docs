@@ -12,12 +12,12 @@ As receitas próprias ensinam prosa causal, árvores de arquivos, camadas, fluxo
 
 ## Instalação
 
-Use uma versão publicada. A versão atual é v0.1.1.
+Use uma versão publicada. A versão atual é v0.1.2.
 
 ### Codex
 
 ```sh
-codex plugin marketplace add nmarcofernandess/dietflow-docs --ref v0.1.1
+codex plugin marketplace add nmarcofernandess/dietflow-docs --ref v0.1.2
 codex plugin add dietflow-docs@dietflow-docs
 codex plugin list --marketplace dietflow-docs --json
 ```
@@ -43,6 +43,7 @@ As skills estão em `plugins/dietflow-docs/skills`; os assets relativos também 
 
 ## Receitas e autoridade
 
+- [Descoberta do módulo](plugins/dietflow-docs/assets/playbooks/descoberta-do-modulo.md): investigação de uso, regras, estados, dados e integrações, seguida de escrita por público.
 - [Receitas técnicas](plugins/dietflow-docs/assets/playbooks/documentacao-tecnica.md): propósito, famílias, código, camadas, persistência, exemplos e limites.
 - [Receitas MDX](plugins/dietflow-docs/assets/playbooks/documentacao-mdx.md): quick, guia, jornada e operação admin.
 - [Censo e impacto](plugins/dietflow-docs/assets/playbooks/censo-e-impacto.md): seleção por tema/WIP/branch sem prometer cobertura automática.
@@ -60,7 +61,7 @@ Para substituir skills antigas, mantenha backup fora dos diretórios de descober
 
 ## Manutenção e distribuição
 
-Versão atual 0.1.1. Os três catálogos e quatro manifests do pacote devem manter identidade/versão coerentes. Preserve links relativos e empacote assets com as skills. Publique tag e arquivos da release após conferir o conteúdo. Source público e release não comprovam instalação, execução em cada host ou qualidade de todas as docs do consumidor. Resultados efetivamente observados ficam em [Verificação](VERIFICATION.md).
+Versão atual 0.1.2. Os três catálogos e quatro manifests do pacote devem manter identidade/versão coerentes. Preserve links relativos e empacote assets com as skills. Publique tag e arquivos da release após conferir o conteúdo. Source público e release não comprovam instalação, execução em cada host ou qualidade de todas as docs do consumidor. Resultados efetivamente observados ficam em [Verificação](VERIFICATION.md).
 
 ## Licença
 

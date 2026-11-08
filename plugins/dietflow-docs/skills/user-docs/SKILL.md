@@ -1,6 +1,6 @@
 ---
 name: user-docs
-description: "Cria, atualiza ou recenseia docs MDX de usuário do DietFlow para nutricionistas: início rápido, guia completo, jornadas, referências e ajuda contextual. Use quando o pedido ensinar o uso do produto ou atualizar páginas após mudança de módulo."
+description: "Cria, atualiza ou recenseia docs MDX de usuário do DietFlow para nutricionistas: início rápido, guia completo, jornadas, referências e ajuda contextual. Investiga o funcionamento do módulo no código antes de ensinar seu uso. Use quando o pedido ensinar o uso do produto ou atualizar páginas após mudança de módulo."
 ---
 
 # Documentação de usuário do DietFlow
@@ -14,6 +14,8 @@ Confira coleção, rota, metas locais/ancestrais e links. Preserve a fonte únic
 ## Como trabalhar
 
 Identifique o checkout consumidor, leia suas instruções e localize os owners pelo [mapa de fontes](../../assets/references/fontes-dietflow.md). Receitas do pacote ensinam a forma; código e contratos vivos determinam os fatos. Não é necessário ler documentos exemplares externos para aprender a escrever.
+
+Quando precisar entender um módulo para documentá-lo, siga [descoberta do módulo](../../assets/playbooks/descoberta-do-modulo.md): parta da entrada real, reconstrua uso, regras, estados, dados e integrações, e transforme os achados em documentação para o leitor desta skill. Isso também vale sem docs anteriores ou delta Git. Reaproveite descoberta compatível com o recorte; não dependa de um agente externo nem peça novamente o público.
 
 Do pedido e contexto, resolva criar, atualizar, consolidar ou recensear. Examine o delta integral pertinente, preserve WIP alheio e siga owners/consumidores; use [censo e impacto](../../assets/playbooks/censo-e-impacto.md) quando houver mudança ou recenso. Um match não prova cobertura, e contagem não demonstra frescor. Não crie um registro novo se o existente basta.
 

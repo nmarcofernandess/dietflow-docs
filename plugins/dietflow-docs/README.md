@@ -1,6 +1,6 @@
 # DietFlow Docs
 
-Plugin de documentação do DietFlow com três entradas: dietflow-docs para desenvolvimento, user-docs para nutricionistas e admin-docs para operadores administrativos. Cada skill cria, atualiza, consolida ou recenseia conforme o contexto. Receitas próprias ensinam escrita, seleção por impacto, árvores, arquitetura em camadas e Mermaid, sem exigir acesso a documentos exemplares externos.
+Plugin de documentação do DietFlow com três entradas: dietflow-docs para desenvolvimento, user-docs para nutricionistas e admin-docs para operadores administrativos. Cada skill cria, atualiza, consolida ou recenseia conforme o contexto. As três skills investigam o módulo pelo código antes de escrever, usando a [receita de descoberta](assets/playbooks/descoberta-do-modulo.md), sem depender de agentes registrados. Receitas próprias ensinam escrita, seleção por impacto, árvores, arquitetura em camadas e Mermaid, sem exigir acesso a documentos exemplares externos.
 
 ## Instalar no Claude Code
 
