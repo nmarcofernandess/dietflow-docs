@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-11-08
+
+- Corrige link do README para funcionar também no pacote isolado e no cache instalado.
+- Preserva o comportamento das três skills e das receitas.
+
 ## 0.1.0 — 2026-11-08
 
 - Três entradas para desenvolvimento, usuário e admin.

@@ -12,12 +12,12 @@ As receitas próprias ensinam prosa causal, árvores de arquivos, camadas, fluxo
 
 ## Instalação
 
-Use uma versão publicada. A primeira é v0.1.0.
+Use uma versão publicada. A versão atual é v0.1.1.
 
 ### Codex
 
 ```sh
-codex plugin marketplace add nmarcofernandess/dietflow-docs --ref v0.1.0
+codex plugin marketplace add nmarcofernandess/dietflow-docs --ref v0.1.1
 codex plugin add dietflow-docs@dietflow-docs
 codex plugin list --marketplace dietflow-docs --json
 ```
@@ -60,7 +60,7 @@ Para substituir skills antigas, mantenha backup fora dos diretórios de descober
 
 ## Manutenção e distribuição
 
-Versão inicial 0.1.0. Os três catálogos e quatro manifests do pacote devem manter identidade/versão coerentes. Preserve links relativos e empacote assets com as skills. Publique tag e arquivos da release após conferir o conteúdo. Source público e release não comprovam instalação, execução em cada host ou qualidade de todas as docs do consumidor. Resultados efetivamente observados ficam em [Verificação](VERIFICATION.md).
+Versão atual 0.1.1. Os três catálogos e quatro manifests do pacote devem manter identidade/versão coerentes. Preserve links relativos e empacote assets com as skills. Publique tag e arquivos da release após conferir o conteúdo. Source público e release não comprovam instalação, execução em cada host ou qualidade de todas as docs do consumidor. Resultados efetivamente observados ficam em [Verificação](VERIFICATION.md).
 
 ## Licença
 
