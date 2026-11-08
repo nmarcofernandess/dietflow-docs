@@ -1,0 +1,35 @@
+{
+  "name": "dietflow-docs",
+  "version": "0.1.0",
+  "description": "Documentação técnica, de usuário e de admin do DietFlow, com receitas próprias e fontes verificadas.",
+  "author": {
+    "name": "Marco Antonio",
+    "url": "https://github.com/nmarcofernandess"
+  },
+  "repository": "https://github.com/nmarcofernandess/dietflow-docs",
+  "license": "MIT",
+  "keywords": [
+    "documentation",
+    "dietflow",
+    "mdx",
+    "mermaid",
+    "agent-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "DietFlow Docs",
+    "shortDescription": "Docs por público e contexto",
+    "longDescription": "Documentação técnica, de usuário e de admin do DietFlow, com receitas próprias e fontes verificadas.",
+    "developerName": "Marco Antonio",
+    "category": "Productivity",
+    "capabilities": [
+      "Documentation",
+      "Review"
+    ],
+    "defaultPrompt": [
+      "Documente a arquitetura deste módulo do DietFlow.",
+      "Atualize a ajuda MDX deste módulo para o nutricionista.",
+      "Escreva a orientação de admin desta operação."
+    ]
+  }
+}

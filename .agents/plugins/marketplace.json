@@ -1,0 +1,22 @@
+{
+  "name": "dietflow-docs",
+  "interface": {
+    "displayName": "DietFlow Docs"
+  },
+  "plugins": [
+    {
+      "name": "dietflow-docs",
+      "version": "0.1.0",
+      "description": "Documentação técnica, de usuário e de admin do DietFlow, com receitas próprias e fontes verificadas.",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dietflow-docs"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

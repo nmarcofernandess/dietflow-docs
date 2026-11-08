@@ -1,0 +1,30 @@
+{
+  "name": "dietflow-docs",
+  "description": "Documentação técnica, de usuário e de admin do DietFlow, com receitas próprias e fontes verificadas.",
+  "owner": {
+    "name": "Marco Antonio",
+    "url": "https://github.com/nmarcofernandess"
+  },
+  "plugins": [
+    {
+      "name": "dietflow-docs",
+      "version": "0.1.0",
+      "description": "Documentação técnica, de usuário e de admin do DietFlow, com receitas próprias e fontes verificadas.",
+      "author": {
+        "name": "Marco Antonio",
+        "url": "https://github.com/nmarcofernandess"
+      },
+      "repository": "https://github.com/nmarcofernandess/dietflow-docs",
+      "license": "MIT",
+      "keywords": [
+        "documentation",
+        "dietflow",
+        "mdx",
+        "mermaid",
+        "agent-skills"
+      ],
+      "source": "./plugins/dietflow-docs",
+      "category": "productivity"
+    }
+  ]
+}
