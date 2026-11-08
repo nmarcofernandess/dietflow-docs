@@ -35,7 +35,7 @@ A distribuição usa o marketplace Claude na raiz e o manifest do pacote. Confir
 
 ### Cursor
 
-Adicione o repositório `https://github.com/nmarcofernandess/dietflow-docs` ao fluxo de marketplace/plugin do Cursor e instale DietFlow Docs. O repo contém `.cursor-plugin/marketplace.json` e o pacote contém `.cursor-plugin/plugin.json`, no mesmo layout do Superflow. Confira descoberta e versão no host; não há teste de execução Cursor implícito na existência desses arquivos.
+Em Customize, escolha **From GitHub Repository**, informe `https://github.com/nmarcofernandess/dietflow-docs` e instale DietFlow Docs. O repo contém `.cursor-plugin/marketplace.json` e o pacote contém `.cursor-plugin/plugin.json`, no mesmo layout do Superflow. Confira descoberta e versão no host; não há teste de execução Cursor implícito na existência desses arquivos.
 
 ### Outros hosts
 
@@ -65,3 +65,7 @@ Versão inicial 0.1.0. Os três catálogos e quatro manifests do pacote devem ma
 ## Licença
 
 MIT. Exemplos são fictícios. Não adicionar ao repo credenciais, dados pessoais, dumps ou arquivos internos sem recorte e autorização.
+
+## Referências de formato
+
+[Plugins Cursor](https://cursor.com/docs/plugins) e [Agent Skills Cursor](https://cursor.com/docs/skills) descrevem a importação GitHub; o formato Claude foi conferido pelo validador nativo. Catálogos e overlays seguem a organização do repositório Superflow de nmarcofernandess. Publicar este repo não equivale a cadastrar o plugin nos diretórios públicos dos fornecedores.
