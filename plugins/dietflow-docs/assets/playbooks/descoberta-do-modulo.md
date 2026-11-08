@@ -22,6 +22,29 @@ Para cada capacidade relevante, conecte a intenção do usuário ao resultado. I
 
 Não trate todas as actions como comandos disponíveis ao leitor nem todos os campos do schema como recursos da interface. Para operação administrativa, confira separadamente autorização de leitura e escrita, alcance sobre registros/usuários e possibilidade real de recuperação. Para documentação técnica, preserve também as responsabilidades e contratos internos que explicam essas decisões.
 
+## Explicar como funciona e por que tem essa forma
+
+**Como:** escolha um caso representativo do recorte e percorra o caminho inteiro: gatilho, entrada, decisões, transformações, writer, reader e resultado para os consumidores pertinentes. Use valores fictícios compatíveis com os tipos e regras lidos, identificando-os como exemplo. Em cada passagem, mostre qual responsabilidade muda de owner, que dados atravessam a fronteira e onde ocorre a decisão; inclua falha ou cancelamento quando mudarem o resultado. Se uma etapa não existir, não a acrescente para completar o roteiro.
+
+Reconstrua um modelo mental com os conceitos necessários, o fluxo central e onde ficam suas responsabilidades. Explique os pontos surpreendentes que mudam a compreensão; não transforme a narrativa em comentário de cada linha do código. Use uma árvore curta para localização e as receitas Mermaid para relações ou transformações que fiquem mais claras visualmente. Ao reunir achados sobre partes distintas, resolva sobreposições e contradições na fonte antes de redigir uma explicação única.
+
+**Por quê:** diferencie a consequência verificável do mecanismo e a motivação de quem o escolheu. O código pode demonstrar que uma confirmação antecede uma gravação; isso não comprova por que essa confirmação foi introduzida, por que um limite tem certo valor ou quais alternativas foram consideradas.
+
+Quando a justificativa for relevante para o pedido e ainda não estiver sustentada, parta dos arquivos e símbolos encontrados. Consulte o contrato e os comentários pertinentes; use o histórico do trecho para localizar a mudança de origem, seguindo renames quando necessário, e leia o PR, issue ou decisão vinculada. O último commit que tocou o arquivo pode não conter a decisão original. Fontes externas só entram quando houver relação concreta com a dúvida e acesso permitido; não é necessário pesquisar toda ferramenta conectada para escrever uma doc.
+
+Calibre a conclusão conforme a evidência:
+
+| Evidência encontrada | Como tratar na documentação |
+|---|---|
+| Justificativa explícita em contrato, comentário, decisão ou discussão atribuível | Explique o motivo com referência à fonte e preserve seu alcance. Confira se ainda é compatível com o comportamento atual. |
+| Indícios que sustentam uma interpretação, sem declaração explícita | Identifique a inferência e a relação entre os indícios. Não a atribua ao autor ou à equipe como decisão confirmada. |
+| Motivos concorrentes ou fontes contraditórias | Preserve a divergência relevante e identifique o que a resolveria; não escolha o relato mais conveniente para uma explicação elegante. |
+| Nenhuma justificativa encontrada no recorte pesquisado | Declare que o motivo não foi determinado, com as fontes consultadas, e documente o funcionamento que conseguiu comprovar. |
+
+Uma hipótese sugerida pelo usuário é uma pista a verificar. Cópias de uma mesma interpretação não são evidências independentes; ao afirmar uma decisão humana, procure sua fonte atribuível e não amplie uma orientação temporária para uma regra permanente. Não justifique retrospectivamente uma implementação só porque ela parece razoável hoje.
+
+Na documentação técnica, razões, alternativas e limites sustentados ajudam a manter o módulo. Nas docs de usuário e admin, explique as consequências práticas comprovadas para a tarefa; mantenha hipóteses de implementação nas notas da investigação, sem apresentá-las como orientação ao operador. Essa distinção regula a precisão da prosa, sem impor rótulos de confiança ou seções de investigação a cada página.
+
 ## Sustentar a explicação
 
 Associe os achados importantes aos arquivos e símbolos que os sustentam. Distinga comportamento lido no código, intenção de contrato, observação em execução e dúvida ainda não determinada. Specs e comentários ajudam a interpretar; uma implementação ausente não vira capacidade entregue porque está planejada.
@@ -47,3 +70,7 @@ Use as receitas técnicas ou MDX da skill para compor as páginas. Quando já ho
 **Exemplo fictício:** no módulo Propostas, a tela mostra “Salvar rascunho” e “Enviar”. A leitura revela que salvar persiste uma proposta ainda não publicada; enviar exige uma confirmação e um writer autorizado, e outro reader decide o que o destinatário recebe. A doc de usuário ensina preparar, salvar e enviar; a técnica explica writer, autorização, transição e reader; a de admin descreve a intervenção administrativa somente se ela existir. Não conclua que salvar já enviou nem invente um comando de admin equivalente.
 
 Ao terminar, confronte a prosa com os achados: acesso, sequência, labels, condições, resultado e recuperação precisam concordar. Confira navegação e referências afetadas. Relate a documentação entregue e os limites de evidência, sem apresentar a descoberta por leitura como validação funcional do produto.
+
+## Referências de elaboração
+
+Receita própria que reaproveita a distinção entre percurso de execução e motivação investigada de [Pstack how](https://github.com/michael-denyer/pstack-claude/blob/v0.9.133/plugins/pstack/skills/how/SKILL.md) e [Pstack why](https://github.com/michael-denyer/pstack-claude/blob/v0.9.133/plugins/pstack/skills/why/SKILL.md). O procedimento necessário está neste arquivo; não exige instalar Pstack, ler esses prompts, adotar seus modelos ou executar sua orquestração de agentes.
